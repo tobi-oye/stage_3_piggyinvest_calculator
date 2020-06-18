@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piggyvest Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="logo">
+        <img src="assets/images/piggyvest-logo.png" height="50" />
+      </div>
+      <div id="content-container">
+        <div id="info-section">
+          <h1 class="accent-color header-text">
+            The Better Way To Save & Invest
+          </h1>
+          <p>
+            PiggyVest helps you achieve financial freedom by enabling you save
+            responsibly and invest on the go
+          </p>
+          <p>Earn 10% - 15% interest on savings.</p>
+          <p>Earn over 25% return on investments.</p>
+          <p>CALCULATE YOU INVESTMENT INTEREST NOW!</p>
+        </div>
+        <div id="calculator-section">
+          <p class="calculator-header">INVESTMENT CALCULATOR</p>
+          <div class="input-section">
+            <label aria-label="amount">AMOUNT</label>
+            <input
+              class="input-field"
+              type="number"
+              id="amount-value"
+              aria-labelledby="amount"
+              placeholder=" e.g. 1,000"
+            />
+          </div>
+          <div class="input-section">
+            <label>PIGGYVEST INVESTMENT PLAN</label>
+            <select class="input-field" id="month-value">
+              <option value="1">1 month</option>
+              <option value="2">2 months</option>
+              <option value="3">3 months</option>
+              <option value="4">4 months</option>
+              <option value="5">5 months</option>
+              <option value="6">6 months</option>
+              <option value="7">7 months</option>
+              <option value="8">8 months</option>
+              <option value="9">9 months</option>
+              <option value="10">10 months</option>
+              <option value="11">11 months</option>
+              <option value="12">1 year</option>
+            </select>
+          </div>
+          <button id="submit-button" class="button mar-top25 mar-bot25">
+            CALCULATE
+          </button>
+          <div class="width-100">
+            <h4 class="result-header">RESULT FOR YOUR INVESTMENT:</h4>
+            <div class="result-inner-container">
+              <div>
+                <span>AMOUNT: </span>
+                <span id="result-amount"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
